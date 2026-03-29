@@ -1,0 +1,22 @@
+Base URL
+http://localhost:5005
+
+1. Create Recipe
+Endpoint: POST /
+Description: Creates a new recipe in the database.
+
+2. Get All Recipes
+Endpoint: GET /
+Description: Fetch all recipes.
+
+3. Get Recipe by ID
+Endpoint: GET /:id
+Description: Fetch a single recipe by ID.
+
+4. Update Recipe
+Endpoint: PUT / PATCH /:id
+Description: Update recipe details.
+
+5. Delete Recipe
+Endpoint: DELETE /:id
+Description: Delete a recipe.

@@ -1,0 +1,222 @@
+//1. create receipes
+Request Method: POST
+Sample Request Body:
+{
+  "title": "Paneer Butter Masala",
+  "type": "Veg",
+  "ingredients": [
+    "paneer",
+    "butter",
+    "tomatoes",
+    "onion",
+    "cashew nuts",
+    "cream",
+    "ginger-garlic paste",
+    "red chili powder",
+    "turmeric",
+    "garam masala",
+    "coriander powder",
+    "kasuri methi",
+    "salt",
+    "oil"
+  ],
+  "cookingTime": "40 minutes",
+  "instructions": "Paneer Butter Masala is prepared by first making a rich gravy using tomatoes, onions, cashews, and spices, which is blended into a smooth paste. The gravy is then cooked with butter and cream to achieve a creamy texture. Cubes of paneer are added to the gravy and simmered gently. Finally, kasuri methi and fresh cream are added for flavor, and the dish is served hot with naan or rice."
+}
+
+Sample response:
+{
+    "message": "Receipe created successfully",
+    "receipe": {
+        "title": "Paneer Butter Masala",
+        "type": "Veg",
+        "ingredients": [
+            "paneer",
+            "butter",
+            "tomatoes",
+            "onion",
+            "cashew nuts",
+            "cream",
+            "ginger-garlic paste",
+            "red chili powder",
+            "turmeric",
+            "garam masala",
+            "coriander powder",
+            "kasuri methi",
+            "salt",
+            "oil"
+        ],
+        "cookingTime": "40 minutes",
+        "instructions": "Paneer Butter Masala is prepared by first making a rich gravy using tomatoes, onions, cashews, and spices, which is blended into a smooth paste. The gravy is then cooked with butter and cream to achieve a creamy texture. Cubes of paneer are added to the gravy and simmered gently. Finally, kasuri methi and fresh cream are added for flavor, and the dish is served hot with naan or rice.",
+        "_id": "69c9381d263f9062daa9a7af",
+        "createdAt": "2026-03-29T14:33:01.264Z",
+        "__v": 0
+    }
+}
+
+----------------------------------------------------------------------------------------
+//2. get all receipes
+Request Method: GET
+Sample request: http://localhost:5005/
+Sample Response:
+{
+    "message": "Receipes fetched successfully",
+    "receipes": [
+        {
+            "_id": "69c9362b3e488c21fe609794",
+            "title": "Chicken briyani",
+            "type": "Non-veg",
+            "ingredients": [
+                "chicken",
+                "basmati rice",
+                "yogurt",
+                "spices",
+                "garam masala",
+                "ginger-garlic paste",
+                "red chili powder",
+                "turmeric",
+                "mint",
+                "coriander",
+                "onion"
+            ],
+            "cookingTime": "1 hour",
+            "instructions": "marinating chicken in yogurt and spices (1-2 hours), frying onions (birista), and parboiling basmati rice. The dish is layered—chicken at the bottom, topped with rice, saffron milk, herbs, and fried onions—then sealed and cooked on dum(low heat) for 15-30 minutes.",
+            "createdAt": "2026-03-29T14:24:43.708Z",
+            "__v": 0
+        },
+        {
+            "_id": "69c93819263f9062daa9a7ad",
+            "title": "Paneer Butter Masala",
+            "type": "Veg",
+            "ingredients": [
+                "paneer",
+                "butter",
+                "tomatoes",
+                "onion",
+                "cashew nuts",
+                "cream",
+                "ginger-garlic paste",
+                "red chili powder",
+                "turmeric",
+                "garam masala",
+                "coriander powder",
+                "kasuri methi",
+                "salt",
+                "oil"
+            ],
+            "cookingTime": "40 minutes",
+            "instructions": "Paneer Butter Masala is prepared by first making a rich gravy using tomatoes, onions, cashews, and spices, which is blended into a smooth paste. The gravy is then cooked with butter and cream to achieve a creamy texture. Cubes of paneer are added to the gravy and simmered gently. Finally, kasuri methi and fresh cream are added for flavor, and the dish is served hot with naan or rice.",
+            "createdAt": "2026-03-29T14:32:57.262Z",
+            "__v": 0
+        },
+        {
+            "_id": "69c9381d263f9062daa9a7af",
+            "title": "Paneer Butter Masala",
+            "type": "Veg",
+            "ingredients": [
+                "paneer",
+                "butter",
+                "tomatoes",
+                "onion",
+                "cashew nuts",
+                "cream",
+                "ginger-garlic paste",
+                "red chili powder",
+                "turmeric",
+                "garam masala",
+                "coriander powder",
+                "kasuri methi",
+                "salt",
+                "oil"
+            ],
+            "cookingTime": "40 minutes",
+            "instructions": "Paneer Butter Masala is prepared by first making a rich gravy using tomatoes, onions, cashews, and spices, which is blended into a smooth paste. The gravy is then cooked with butter and cream to achieve a creamy texture. Cubes of paneer are added to the gravy and simmered gently. Finally, kasuri methi and fresh cream are added for flavor, and the dish is served hot with naan or rice.",
+            "createdAt": "2026-03-29T14:33:01.264Z",
+            "__v": 0
+        }
+    ]
+}
+
+----------------------------------------------------------------------------------------
+//3. get single receipe
+Request Method: GET
+
+Sample Request : http://localhost:5005/69c9381d263f9062daa9a7af
+
+Sample Response:
+{
+    "receipe": {
+        "_id": "69c9381d263f9062daa9a7af",
+        "title": "Paneer Butter Masala",
+        "type": "Veg",
+        "ingredients": [
+            "paneer",
+            "butter",
+            "tomatoes",
+            "onion",
+            "cashew nuts",
+            "cream",
+            "ginger-garlic paste",
+            "red chili powder",
+            "turmeric",
+            "garam masala",
+            "coriander powder",
+            "kasuri methi",
+            "salt",
+            "oil"
+        ],
+        "cookingTime": "40 minutes",
+        "instructions": "Paneer Butter Masala is prepared by first making a rich gravy using tomatoes, onions, cashews, and spices, which is blended into a smooth paste. The gravy is then cooked with butter and cream to achieve a creamy texture. Cubes of paneer are added to the gravy and simmered gently. Finally, kasuri methi and fresh cream are added for flavor, and the dish is served hot with naan or rice.",
+        "createdAt": "2026-03-29T14:33:01.264Z",
+        "__v": 0
+    }
+}
+
+----------------------------------------------------------------------------------------
+//4. update receipe
+Request Method: PUT / PATCH
+Sample Request URL: http://localhost:5005/69c9381d263f9062daa9a7af
+Sample Request Body:
+{
+  "cookingTime": "45 minutes"
+}
+
+Sample response:
+{
+    "message": "Receipe updated successfully",
+    "receipe": {
+        "_id": "69c9381d263f9062daa9a7af",
+        "title": "Paneer Butter Masala",
+        "type": "Veg",
+        "ingredients": [
+            "paneer",
+            "butter",
+            "tomatoes",
+            "onion",
+            "cashew nuts",
+            "cream",
+            "ginger-garlic paste",
+            "red chili powder",
+            "turmeric",
+            "garam masala",
+            "coriander powder",
+            "kasuri methi",
+            "salt",
+            "oil"
+        ],
+        "cookingTime": "50 minutes",
+        "instructions": "Paneer Butter Masala is prepared by first making a rich gravy using tomatoes, onions, cashews, and spices, which is blended into a smooth paste. The gravy is then cooked with butter and cream to achieve a creamy texture. Cubes of paneer are added to the gravy and simmered gently. Finally, kasuri methi and fresh cream are added for flavor, and the dish is served hot with naan or rice.",
+        "createdAt": "2026-03-29T14:33:01.264Z",
+        "__v": 0
+    }
+}
+
+----------------------------------------------------------------------------------------
+//delete receipe
+Request Method: DELETE
+
+Sample Request URL: http://localhost:5005/69c9381d263f9062daa9a7af
+Sample Response:
+{
+    "message": "Receipe deleted successfully"
+}
